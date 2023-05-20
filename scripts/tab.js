@@ -1,0 +1,2 @@
+const tContainer=document.querySelector('.tContainer');const tabs=Array.from(tContainer.querySelectorAll('.tab'));const tabContents=Array.from(tContainer.querySelectorAll('.content'));tabs.forEach(tab=>{tab.addEventListener('click',e=>{const target=tab.dataset.target;const tabContent=tContainer.querySelector('#'+target);tabs.forEach(t=>{t.classList.remove('selected');tab.classList.add('selected')})
+tabContents.forEach(c=>c.classList.remove('selected'));tabContent.classList.add('selected')})})

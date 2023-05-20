@@ -1,0 +1,1 @@
+document.querySelector('#tt').classList.add('hide');const tooltip=document.querySelector('.tooltip');console.log(tooltip);tooltip.addEventListener('click',function(){document.querySelector('#tt').classList.toggle('show');document.querySelector('#tt').classList.toggle('hide')})
